@@ -89,7 +89,7 @@ browser.storage.local.get((item) => {
         isAutomatic = automaticObj.isAutomatic;
     }
 
-    // Run both on extension being created (on page load) as well as when DOM nodes are inserted because Reddit does dynamic JavaScript content insertion similar to how AMP operates
+    // Run both on extension being created (on page load) as well as when DOM nodes are inserted because some sites do dynamic JavaScript content insertion similar to how AMP operates
     runCheck();
     document.addEventListener("DOMNodeInserted", function(event) {
         runCheck();

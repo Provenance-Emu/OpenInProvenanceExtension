@@ -4,7 +4,7 @@
         "description": "The display name for the extension."
     },
     "extension_description": {
-        "message": "Opens Reddit links in Provenance. Can be set to automatic or manual.",
+        "message": "Opens ROM links in Provenance. Can be set to automatic or manual.",
         "description": "Description of what the extension does."
     }
 }

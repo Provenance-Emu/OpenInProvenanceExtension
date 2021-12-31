@@ -6,7 +6,7 @@ function matchInArray(string, expressions) {
         i = 0;
 
     for (; i < len; i++) {
-        if (string.match(expressions[i])) {
+        if (string.match("." + expressions[i])) {
             return true;
         }
     }
@@ -20,7 +20,50 @@ function runCheck() {
         return;
     }
 
-    const extensions = ["a26", "rom", "nes", "z64", "n64", "sms", "gb"]
+    const extensions = [
+        "a26",
+        "7z",
+        "7zip",
+        "a52",
+        "bin",
+        "ccd",
+        "chd",
+        "cso",
+        "cso",
+        "cue",
+        "gb",
+        "gen",
+        "gg",
+        "iso",
+        "lnx",
+        "md",
+        "md",
+        "n64",
+        "nes",
+        "ngc",
+        "ngp",
+        "ngpc",
+        "npc",
+        "pbp",
+        "rar",
+        "rom",
+        "sfc",
+        "sfc",
+        "sg",
+        "sgx",
+        "smc",
+        "smd",
+        "smd",
+        "sms",
+        "sms",
+        "swc",
+        "vb",
+        "wad",
+        "ws",
+        "wsc",
+        "z64",
+        "zip"
+    ];
     const match = matchInArray(window.location.href, extensions);
 
     if (match) {
